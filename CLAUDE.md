@@ -18,7 +18,11 @@
 
 ## MVP Goals
 
-<!-- Populated by /aam-brief with Phase 1 deliverables -->
+- Single-page site live at tiberiusascent.com with all sections (hero, about, ventures, leadership, contact, footer)
+- Responsive across mobile/tablet/desktop viewports
+- Passes axe-core accessibility scan with zero violations
+- Deployed to Cloudflare Pages with HTTPS
+- Page load under 1s, total size under 300KB
 
 ## Behavioral Rules
 
