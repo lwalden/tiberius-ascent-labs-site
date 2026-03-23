@@ -15,4 +15,4 @@
 | S1-002 | Style site with responsive CSS | feature | | done |
 | S1-003 | Add final copy for all sections | chore | | done |
 | S1-004 | Accessibility compliance | chore | | done |
-| S1-005 | Deploy to Cloudflare Pages | chore | | todo |
+| S1-005 | Deploy to Cloudflare Pages | chore | | done |
