@@ -7,7 +7,7 @@
 ## Project Identity
 
 **Project:** tiberius-ascent-labs-site
-**Description:** Public website for Tiberius Ascent Labs LLC — holding company for AccesiShield and future ventures
+**Description:** Public website for Tiberius Ascent Labs LLC — holding company for AccessiShield and future ventures
 **Type:** static-site
 **Stack:** TBD — static HTML/CSS/JS, optimized for low cost/free hosting
 
