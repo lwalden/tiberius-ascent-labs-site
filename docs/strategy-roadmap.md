@@ -7,7 +7,7 @@
 
 ## What & Why
 
-**Problem:** Tiberius Ascent Labs LLC has no web presence. People doing due diligence on subsidiaries (like AccesiShield) or vendors researching the parent company find nothing — which undermines credibility.
+**Problem:** Tiberius Ascent Labs LLC has no web presence. People doing due diligence on subsidiaries (like AccessiShield) or vendors researching the parent company find nothing — which undermines credibility.
 **Vision:** A clean, professional single-page site that confirms TAL LLC is a real, competent company when someone searches for it.
 **Target Users:** People performing due diligence — potential partners, customers of subsidiaries, vendors, regulators. No one is driven here intentionally; they arrive by searching or following links from subsidiary sites.
 
@@ -17,7 +17,7 @@
 
 1. Hero section with company name + one-line descriptor ("Technology Ventures") -- Acceptance: renders on desktop and mobile, loads in under 1s
 2. About section (2-3 sentences: what TAL is, founding context, what it does) -- Acceptance: content is accurate and concise, no placeholder text
-3. Ventures/portfolio section (AccesiShield card + space for future ventures) -- Acceptance: each venture shows name, one-line description, and link to its site
+3. Ventures/portfolio section (AccessiShield card + space for future ventures) -- Acceptance: each venture shows name, one-line description, and link to its site
 4. Leadership section (Laurance Walden bio, title, professional background) -- Acceptance: bio is present, accurate, no links to personal site
 5. Contact section with plain email link (contact@tiberiusascent.com) -- Acceptance: email link works, registered state (Washington) displayed
 6. Legal footer (LLC designation, state of incorporation, copyright) -- Acceptance: footer present on all viewport sizes
