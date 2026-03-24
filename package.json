@@ -1,0 +1,30 @@
+{
+  "name": "tiberius-ascent-labs-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test:a11y": "node a11y-check.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwalden/tiberius-ascent-labs-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lwalden/tiberius-ascent-labs-site/issues"
+  },
+  "homepage": "https://github.com/lwalden/tiberius-ascent-labs-site#readme",
+  "devDependencies": {
+    "@axe-core/cli": "^4.11.1",
+    "@axe-core/playwright": "^4.11.1",
+    "playwright": "^1.58.2",
+    "wrangler": "^4.76.0"
+  }
+}
