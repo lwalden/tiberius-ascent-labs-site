@@ -61,7 +61,7 @@
 ## Phases
 
 **Phase 1 (MVP):** ~3 weeks — Build and deploy the single-page site with all sections, responsive design, accessibility compliance, and Cloudflare Pages deployment.
-**Phase 2 (if needed):** Add ventures as they launch (new cards in portfolio section). Add analytics if traffic warrants it.
+**Phase 2 (if needed):** Add ventures as they launch (new cards in portfolio section). Add analytics if traffic warrants it. Automate deploys via GitHub Actions → Cloudflare Pages (replace manual wrangler deploys).
 
 ---
 
