@@ -4,6 +4,9 @@
 # For comprehensive language gitignores, see: https://github.com/github/gitignore
 # ==============================================================================
 
+# MCP server config (may contain API keys)
+.mcp.json
+
 # Secrets and environment variables -- NEVER commit these
 .env
 .env.local
