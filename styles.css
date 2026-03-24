@@ -1,3 +1,7 @@
+/* ===== Silicon Forest Design System ===== */
+/* "The Evergreen Editorial" — Understated Confidence */
+/* Generated via Stitch MCP, adapted for accessibility */
+
 /* ===== Reset & Base ===== */
 *,
 *::before,
@@ -8,24 +12,53 @@
 }
 
 :root {
-  --color-bg: #ffffff;
-  --color-text: #1a1a2e;
-  --color-text-muted: #4a4a68;
-  --color-accent: #16213e;
-  --color-accent-light: #0f3460;
-  --color-surface: #f8f9fa;
-  --color-border: #e2e4e9;
-  --color-link: #1a56db;
-  --color-link-hover: #0f3460;
-  --color-focus: #2563eb;
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Primary — deep forest greens */
+  --color-primary: #042419;
+  --color-primary-container: #1b3a2d;
+
+  /* Surfaces — warm green-tinted neutrals (not Stitch's blue-tinted defaults) */
+  --color-bg: #f5f7f3;
+  --color-surface: #edf2ed;
+  --color-surface-high: #e3ebe3;
+  --color-surface-lowest: #ffffff;
+
+  /* Text — charcoal slate + warm gray */
+  --color-text: #111d27;
+  --color-text-muted: #414844;
+  --color-text-on-dark: #ffffff;
+  --color-text-on-dark-muted: rgba(255, 255, 255, 0.72);
+
+  /* Accents — moss tones */
+  --color-accent: #6b8f71;
+  --color-accent-dim: #4a6b50;
+  --color-tertiary: #02250f;
+
+  /* Links — forest green (no bright blues) */
+  --color-link: #1a5c38;
+  --color-link-hover: #0d3f24;
+  --color-link-on-dark: #accebc;
+  --color-link-on-dark-hover: #c7ebd8;
+
+  /* Focus — visible forest green ring */
+  --color-focus: #2d7a4a;
+  --color-focus-on-dark: #accebc;
+
+  /* Borders — ghost borders only */
+  --color-border-ghost: rgba(193, 200, 194, 0.15);
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-size-base: 1.125rem;
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.05em;
+
+  /* Layout */
   --max-width: 64rem;
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
-  --space-lg: 4rem;
-  --space-xl: 6rem;
+  --space-lg: 6rem;
+  --space-xl: 8.5rem;
 }
 
 html {
@@ -49,12 +82,15 @@ body {
   top: -100%;
   left: var(--space-sm);
   padding: var(--space-xs) var(--space-sm);
-  background: var(--color-accent);
-  color: #fff;
-  border-radius: 0 0 4px 4px;
+  background: var(--color-surface-lowest);
+  color: var(--color-primary);
+  border-radius: 0 0 6px 6px;
   z-index: 100;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
 }
 
 .skip-link:focus {
@@ -70,18 +106,18 @@ body {
 
 /* ===== Typography ===== */
 h1, h2, h3 {
-  color: var(--color-accent);
-  line-height: 1.2;
+  color: var(--color-text);
+  line-height: 1.15;
+  letter-spacing: var(--tracking-tight);
+  font-weight: 700;
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
 }
 
 h2 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
   font-weight: 600;
   margin-bottom: var(--space-sm);
 }
@@ -94,8 +130,9 @@ h3 {
 a {
   color: var(--color-link);
   text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: color 0.15s ease;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
 
 a:hover {
@@ -111,20 +148,20 @@ a:focus-visible {
 /* ===== Header / Hero ===== */
 header[role="banner"] {
   padding: var(--space-xl) 0;
-  background-color: var(--color-accent);
-  color: #fff;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-container) 100%);
+  color: var(--color-text-on-dark);
 }
 
 header h1 {
-  color: #fff;
+  color: var(--color-text-on-dark);
 }
 
 .tagline {
-  font-size: clamp(1.125rem, 2vw, 1.5rem);
-  color: rgba(255, 255, 255, 0.8);
-  margin-top: var(--space-xs);
-  font-weight: 300;
-  letter-spacing: 0.05em;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: var(--color-text-on-dark-muted);
+  margin-top: var(--space-sm);
+  font-weight: 400;
+  letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
 }
 
@@ -133,6 +170,7 @@ section {
   padding: var(--space-lg) 0;
 }
 
+/* Tonal layering — alternating surface tiers instead of borders */
 section:nth-child(even) {
   background-color: var(--color-surface);
 }
@@ -153,13 +191,20 @@ section p {
 
 .venture-card {
   padding: var(--space-md);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  background: var(--color-bg);
+  border: 1px solid var(--color-border-ghost);
+  border-radius: 6px;
+  background: var(--color-surface-lowest);
+  box-shadow: 0 20px 40px rgba(17, 29, 39, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+.venture-card:hover {
+  box-shadow: 0 20px 40px rgba(17, 29, 39, 0.10);
 }
 
 .venture-card h3 {
   margin-bottom: var(--space-xs);
+  color: var(--color-tertiary);
 }
 
 .venture-card p {
@@ -168,6 +213,9 @@ section p {
 
 .venture-card a {
   font-weight: 500;
+  letter-spacing: var(--tracking-wide);
+  font-size: 0.875rem;
+  text-transform: uppercase;
 }
 
 /* ===== Leadership ===== */
@@ -177,13 +225,16 @@ section p {
 
 .leader h3 {
   margin-bottom: 0.25rem;
+  color: var(--color-text);
 }
 
 .leader-title {
   font-weight: 500;
-  color: var(--color-accent-light);
+  color: var(--color-accent-dim);
   margin-bottom: var(--space-sm);
-  font-size: 1rem;
+  font-size: 0.9375rem;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
 }
 
 .leader p:last-child {
@@ -191,6 +242,33 @@ section p {
 }
 
 /* ===== Contact ===== */
+#contact {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-container) 100%);
+  color: var(--color-text-on-dark);
+}
+
+#contact h2 {
+  color: var(--color-text-on-dark);
+}
+
+#contact p {
+  color: var(--color-text-on-dark-muted);
+}
+
+#contact a {
+  color: var(--color-link-on-dark);
+  text-decoration-color: rgba(172, 206, 188, 0.6);
+}
+
+#contact a:hover {
+  color: var(--color-link-on-dark-hover);
+  text-decoration-color: var(--color-link-on-dark-hover);
+}
+
+#contact a:focus-visible {
+  outline-color: var(--color-focus-on-dark);
+}
+
 #contact p + p {
   margin-top: var(--space-xs);
   font-size: 0.9375rem;
@@ -199,8 +277,8 @@ section p {
 /* ===== Footer ===== */
 footer[role="contentinfo"] {
   padding: var(--space-md) 0;
-  background-color: var(--color-accent);
-  color: rgba(255, 255, 255, 0.7);
+  background-color: var(--color-primary);
+  color: var(--color-text-on-dark-muted);
   font-size: 0.875rem;
 }
 
@@ -211,8 +289,8 @@ footer p + p {
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   :root {
-    --space-lg: 3rem;
-    --space-xl: 4rem;
+    --space-lg: 4rem;
+    --space-xl: 5rem;
   }
 
   .container {
@@ -222,22 +300,33 @@ footer p + p {
 
 @media (max-width: 375px) {
   :root {
-    --space-lg: 2rem;
-    --space-xl: 3rem;
+    --space-lg: 3rem;
+    --space-xl: 4rem;
     --font-size-base: 1rem;
+  }
+}
+
+/* ===== Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 /* ===== Print ===== */
 @media print {
   header[role="banner"],
+  #contact,
   footer[role="contentinfo"] {
     background: none;
     color: var(--color-text);
   }
 
   header h1,
-  .tagline {
+  .tagline,
+  #contact h2,
+  #contact p,
+  #contact a {
     color: var(--color-text);
   }
 }
