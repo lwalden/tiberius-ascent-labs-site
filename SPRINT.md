@@ -4,15 +4,8 @@
 > Individual issues are tracked as native Claude Code Tasks (persistent across sessions).
 > Archived to git history when a sprint completes.
 
-**Sprint:** S1 — Build and deploy TAL single-page site
-**Status:** in-progress
-**Phase:** Phase 1 (MVP)
-**Issues:** 5 issues approved
+S1 archived (2026-03-23): 5 planned, 5 completed. 0 scope changes, 0 blocked. Built and deployed TAL single-page site to Cloudflare Pages with all sections, responsive CSS, accessibility compliance, and custom domain.
+<!-- sizing: 4-6 -->
 
-| ID | Title | Type | Risk | Status |
-|---|---|---|---|---|
-| S1-001 | Scaffold HTML structure with all sections | feature | | done |
-| S1-002 | Style site with responsive CSS | feature | | done |
-| S1-003 | Add final copy for all sections | chore | | done |
-| S1-004 | Accessibility compliance | chore | | done |
-| S1-005 | Deploy to Cloudflare Pages | chore | | todo |
+S2 archived (2026-03-23): 3 planned, 3 completed. 0 scope changes, 0 blocked. Added GitHub Actions CI/CD deploy and axe-core accessibility check to pipeline.
+<!-- sizing: 3-5 -->
