@@ -60,14 +60,14 @@
 
 ## Phases
 
-**Phase 1 (MVP):** ~3 weeks — Build and deploy the single-page site with all sections, responsive design, accessibility compliance, and Cloudflare Pages deployment.
-**Phase 2 (if needed):** Add ventures as they launch (new cards in portfolio section). Add analytics if traffic warrants it. Automate deploys via GitHub Actions → Cloudflare Pages (replace manual wrangler deploys).
+**Phase 1 (MVP):** Complete — single-page site shipped on Cloudflare Pages (S1+S2 archived 2026-03-23).
+**Phase 2 (paused):** Repo is paused ("site is up, done for now"). Any follow-up work (new venture cards, analytics, automated deploys) is captured in `BACKLOG.md` as individual items to pick up when triggers are hit.
 
 ---
 
 ## Open Questions
 
-<!-- TODO: CSS library choice (e.g., Pico CSS, Water.css, or hand-written) | WHEN: Phase 1 implementation | BLOCKS: styling -->
+<!-- None — CSS library choice was decided in DECISIONS.md. -->
 
 ---
 
