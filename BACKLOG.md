@@ -6,3 +6,6 @@
 
 | ID | Type | Title | Source | Added |
 |---|---|---|---|---|
+| B-001 | feature | Add new venture cards to portfolio section as they launch | strategy-roadmap Phase 2 (unblocked when a new venture needs a card) | 2026-04-12 |
+| B-002 | feature | Add analytics (e.g., Cloudflare Web Analytics) if traffic warrants | strategy-roadmap Phase 2 (unblocked if the site gets meaningful inbound traffic) | 2026-04-12 |
+| B-003 | chore | Automate deploys via GitHub Actions → Cloudflare Pages (replace manual `wrangler deploy`) | strategy-roadmap Phase 2 (unblocked if deploy cadence increases) | 2026-04-12 |
